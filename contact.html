@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact the WanderWise student team with a validated form.">
+  <title>WanderWise | Contact Us</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">WanderWise</a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="members.html">Members</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading">
+      <p class="section-label">Contact Us</p>
+      <h1>Send a question to the WanderWise team.</h1>
+      <p>Tell us what kind of trip you have in mind, and we will help you choose a clear starting point.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <form id="contactForm" class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <label for="fullName">Full Name</label>
+          <input id="fullName" name="fullName" type="text" placeholder="Example: Faisal Ahmed" pattern="[A-Za-z ]{3,40}" title="Use 3 to 40 letters and spaces only." required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="name@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="05XXXXXXXX" pattern="05[0-9]{8}" title="Use a Saudi mobile number format such as 05XXXXXXXX." required>
+        </div>
+
+        <div class="form-row">
+          <label for="travelDate">Preferred Travel Date (Month Day, Year)</label>
+          <input id="travelDate" name="travelDate" type="text" placeholder="May 20, 2026" pattern="(January|February|March|April|May|June|July|August|September|October|November|December) ([1-9]|[12][0-9]|3[01]), [0-9]{4}" title="Write the date in English like May 20, 2026." required>
+        </div>
+
+        <div class="form-row">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic" required>
+            <option value="">Choose a topic</option>
+            <option value="destination">Destination advice</option>
+            <option value="budget">Budget planning</option>
+            <option value="packing">Packing tips</option>
+            <option value="other">Other question</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your question here..." minlength="10" required></textarea>
+        </div>
+
+        <button class="btn primary" type="submit">Send Message</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <aside class="info-panel">
+        <h2>Contact Details</h2>
+        <p>Email: 431008288@gmail.com</p>
+        <p>Location: tabuk, Saudi Arabia</p>
+        <p>Response time: 1 to 2 school days</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> WanderWise Travel Guide. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
