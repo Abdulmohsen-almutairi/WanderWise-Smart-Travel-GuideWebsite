@@ -65,6 +65,7 @@ WanderWise/
 ├── members.html
 ├── tips.html
 ├── WanderWise_Project_Report.pdf
+├──  README.md
 │
 ├── Assets/
 │   ├── CSS/
